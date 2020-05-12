@@ -1,0 +1,94 @@
+.row{
+	padding:4px;
+	margin:3px 0;
+}
+
+.teachings p{
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-family: arial;
+}
+
+.game{
+	height: 2000;
+	width: 1000;
+	padding: 5px;
+}
+
+#backBtn{
+	margin-bottom: 10px;
+}
+
+#completeBtn{
+	float: right;
+	margin-bottom: 5px;
+	display: inline-block;
+	width:25%;
+}
+
+.testText{
+	border:3px;
+	border-style:solid;
+	height:175px;
+	width:100%;
+	overflow:auto;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+.prefBtns{
+	padding: 2px;
+	padding-top: 5px;
+}
+#game p{
+	float: left;
+	width: 75%;
+	flex-wrap: wrap;
+}
+#navi{
+	color: white;
+}
+
+.teachings img{
+	padding: 10px;
+}
+
+.speech-form{
+	width: 75%;
+	display: inline-block;
+}
+
+#backBtn{
+	float: left;
+	width: 25%;
+}
+.speech-form #voice-select{
+	width: 40%;
+	display: inline-block;
+	float: right;
+}
+.speech-form #speakBtn{
+	float: right;
+	display: inline-block;
+}
+
+.images{
+	display: inline-block;
+}
+
+.images img{
+	
+}
+
+.images #one{
+	float: left;
+	width: 60%;
+}
+.images #two{
+	float: right;
+	width: 40%;
+}
+
+.about p{
+	font-weight: bold;
+}
