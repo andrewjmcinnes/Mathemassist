@@ -1,4 +1,4 @@
-<h2>Pupil: <?= $title ?></h2>
+<h2>Pupil: <?= html_escape($title) ?></h2>
 <br>
 <div class="user-performance">
 	<h5>Completed Chapters: </h5>
