@@ -6,14 +6,14 @@ endif; ?>
 <?php if($this->session->userdata('user_role') == $teacher) : ?>
 	<h3>Teacher</h3>
 	<?php foreach($users as $user) : ?>
-		<h5><?php echo $user['userName']; ?> </h5>
+		<h5><?php echo html_escape($user['userName']); ?> </h5>
 		<div class="row" >
 			<div class="col-md-3">
 				<img src="http://localhost/mathemassist/assets/images/user.jpeg" alt="User" width="50" height="50">
 			</div>
 			<div class="col-md-9" >
 				<small><?php echo $user['role']; ?></small>&nbsp;&nbsp;
-				<?php echo $user['email']; ?>
+				<?php echo html_escape($user['email']); ?>
 				<p><a class="btn btn-default" href="<?php echo site_url('/users/view/'.$user['userId']); ?>">User's Performance</a></p>
 			</div>
 		</div>
