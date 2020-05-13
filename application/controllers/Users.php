@@ -4,11 +4,11 @@
 		public function register(){
 			$data['title'] = 'Sign Up';
 			
-			$this->form_validation->set_rules('name', 'Name', 'required');
-			$this->form_validation->set_rules('email', 'Email', 'required|callback_check_email_exists');
-			$this->form_validation->set_rules('password', 'Password', 'required');
+			$this->form_validation->set_rules('name', 'Name', 'required|max_length[20]');
+			$this->form_validation->set_rules('email', 'Email', 'required|valid_email|callback_check_email_exists|max_length[255]');
+			$this->form_validation->set_rules('password', 'Password', 'required|max_length[255]');
 			$this->form_validation->set_rules('password2', 'Confirm Password', 'required|matches[password]');
-			$this->form_validation->set_rules('classCode', 'Class Code', 'callback_check_class_exists');
+			$this->form_validation->set_rules('classCode', 'Class Code', 'callback_check_class_exists|max_length[4]');
 
 			if($this->form_validation->run() === FALSE){
 				$this->load->view('templates/header');
