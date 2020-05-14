@@ -4,7 +4,7 @@
 		public function register(){
 			$data['title'] = 'Sign Up';
 			
-			$this->form_validation->set_rules('name', 'Name', 'required|max_length[20]');
+			$this->form_validation->set_rules('name', 'Name', 'required|max_length[20]|alpha');
 			$this->form_validation->set_rules('email', 'Email', 'required|valid_email|callback_check_email_exists|max_length[255]');
 			$this->form_validation->set_rules('password', 'Password', 'required|max_length[255]');
 			$this->form_validation->set_rules('password2', 'Confirm Password', 'required|matches[password]');
