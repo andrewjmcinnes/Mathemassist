@@ -40,7 +40,7 @@
 		public function login(){
 			$data['title'] = 'Sign In';
 			
-			$this->form_validation->set_rules('email', 'Email', 'required');
+			$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
 			$this->form_validation->set_rules('password', 'Password', 'required');
 			
 			if($this->form_validation->run() === FALSE){
